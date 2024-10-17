@@ -8,7 +8,7 @@ resource "yandex_vpc_network" "prod" {
   name = "prod"
 }
 
-#создаем облачную подсеть zone A prod
+#создаем облачную подсеть zone A prod!
 resource "yandex_vpc_subnet" "prod-a" {
   name           = "prod-ru-central1-a"
   zone           = "ru-central1-a" #Это очень важно  при создании ресурса в зоне отличной от Зоны по-умолчанию("ru-central1-a")! 
