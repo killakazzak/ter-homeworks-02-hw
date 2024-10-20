@@ -1,14 +1,15 @@
 ###cloud vars
 
-
 variable "cloud_id" {
   type        = string
   description = "https://cloud.yandex.ru/docs/resource-manager/operations/cloud/get-id"
+  default     = "b1gp6qjp3sreksmq9ju1"
 }
 
 variable "folder_id" {
   type        = string
   description = "https://cloud.yandex.ru/docs/resource-manager/operations/folder/get-id"
+  default     = "b1g3hhpc4sj7fmtmdccu"
 }
 
 variable "default_zone" {
@@ -36,10 +37,4 @@ variable "vms_ssh_root_key" {
   default     = "/root/yandex-cloud/ssh.key"
   description = "ssh-keygen -t ed25519"
 }
-
-variable "service_account_key_file" {
-  type        = string
-  description = "/root/yandex-cloud/key.json"
-}
-
 
