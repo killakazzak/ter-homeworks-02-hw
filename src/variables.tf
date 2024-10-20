@@ -33,6 +33,13 @@ variable "vpc_name" {
 
 variable "vms_ssh_root_key" {
   type        = string
-  default     = "<your_ssh_ed25519_key>"
+  default     = "/root/yandex-cloud/ssh.key"
   description = "ssh-keygen -t ed25519"
 }
+
+variable "service_account_key_file" {
+  type        = string
+  description = "/root/yandex-cloud/key.json"
+}
+
+
