@@ -13,7 +13,7 @@ resource "yandex_vpc_subnet" "db" {
   name           = "${var.vpc_name}-db"
   zone           = var.vm_db_default_zone
   network_id     = yandex_vpc_network.develop.id
-  v4_cidr_blocks = var.default_cidr
+  v4_cidr_blocks = var.db_cidr
 }
 
 
