@@ -50,24 +50,6 @@ variable "vm_web_platform_id" {
   default     = "standard-v1"
 }
 
-variable "vm_web_cores" {
-  type        = number
-  description = "Количество ядер для виртуальной машины"
-  default     = 2
-}
-
-variable "vm_web_memory" {
-  type        = number
-  description = "Объем памяти (в ГБ) для виртуальной машины"
-  default     = 1
-}
-
-variable "vm_web_core_fraction" {
-  type        = number
-  description = "Доля ядра для виртуальной машины"
-  default     = 5
-}
-
 variable "vm_web_image_family" {
   type        = string
   description = "Семейство образа для виртуальной машины"
