@@ -34,7 +34,7 @@ variable "vpc_name" {
 
 variable "vms_ssh_public_root_key" {
   type        = string
-  default     = "/root/yandex-cloud/ssh.key"
+  default     = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBc0Xp6r27vq8kIA7/54df2Ktv0caXYSechnRUoAdvSk ubuntu@killakazzak.fvds.ru"
   description = "ssh-keygen -t ed25519"
 }
 
