@@ -9,6 +9,8 @@ variable "vm_db_cidr" {
   default     = ["10.0.2.0/24"]
   description = "https://cloud.yandex.ru/docs/vpc/operations/subnet-create"
 
+}
+
 variable "vm_db_platform_id" {
   type        = string
   description = "ID платформы для виртуальной машины"
