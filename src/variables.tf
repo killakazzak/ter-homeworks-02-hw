@@ -32,7 +32,7 @@ variable "vpc_name" {
 
 ###ssh vars
 
-variable "vms_ssh_root_key" {
+variable "vms_ssh_public_root_key" {
   type        = string
   default     = "/root/yandex-cloud/ssh.key"
   description = "ssh-keygen -t ed25519"
