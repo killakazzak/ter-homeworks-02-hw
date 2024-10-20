@@ -23,24 +23,3 @@ variable "vm_db_name" {
   description = "Имя виртуальной машины"
   default     = "netology-develop-platform-db"
 }
-
-
-variable "vm_db_cores" {
-  type        = number
-  description = "Количество ядер для виртуальной машины"
-  default     = 2
-}
-
-variable "vm_db_memory" {
-  type        = number
-  description = "Объем памяти (в ГБ) для виртуальной машины"
-  default     = 2
-}
-
-variable "vm_db_core_fraction" {
-  type        = number
-  description = "Доля ядра для виртуальной машины"
-  default     = 20
-}
-
-
