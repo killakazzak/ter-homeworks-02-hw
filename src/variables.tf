@@ -1,4 +1,4 @@
-###cloud vars!
+###cloud vars
 
 
 variable "cloud_id" {
