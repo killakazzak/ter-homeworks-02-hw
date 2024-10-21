@@ -56,3 +56,12 @@ variable "vm_web_image_family" {
   default     = "ubuntu-2004-lts"
 }
 
+variable "test" {
+  type = list(object({
+    dev1 = list(string)
+    dev2 = list(string)
+    prod1 = list(string)
+  }))
+}
+
+
